@@ -17,7 +17,7 @@ _Entries are editable, and lists are sortable by caloric content._
 
 ## Setup/Installation Requirements
 
-* _Clone this repository (https://github.com/CalebPaul/record-store.git) to your desktop._
+* _Clone this repository (https://github.com/CalebPaul/meal-tracker-js2.git) to your desktop._
 * _Navigate to project folder using terminal._
 * _Install Node Package Manager(npm) by typing `npm install` in terminal._
 * _Install Bower by typing `bower install`._

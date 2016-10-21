@@ -15,6 +15,7 @@ export class CaloriePipe implements PipeTransform {
           output.push(input[i]);
         }
       }
+      console.log(output.length); //to test return array size
       return output;
     } else if (desiredCal === "low") {
       for (var i = 0; i < input.length; i++) {
@@ -22,11 +23,11 @@ export class CaloriePipe implements PipeTransform {
           output.push(input[i]);
         }
       }
+      console.log(output.length); //to test return array size
       return output;
     } else {
       return input;
     }
-
 
   }
 }

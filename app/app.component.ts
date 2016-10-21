@@ -5,18 +5,20 @@ import { Meal } from './meal.model';
   selector: 'my-app',
   template: `
   <div class="container">
-    <h1 class="well">Meal Tracker</h1>
-    <meal-list
-      [childMealList]="masterMealList"
-      (clickSender)="showMeal($event)"
-    ></meal-list>
-    <edit-meal
-      [childSelectedMeal]="selectedMeal"
-      (doneClickedSender)="finishedEditing()"
-    ></edit-meal>
-    <new-meal
-      (newMealSender)="addMeal($event)"
-    ></new-meal>
+    <div class="row">
+      <h1 class="well">Meal Tracker</h1>
+      <new-meal
+        (newMealSender)="addMeal($event)"
+      ></new-meal>
+      <meal-list
+        [childMealList]="masterMealList"
+        (clickSender)="showMeal($event)"
+      ></meal-list>
+      <edit-meal
+        [childSelectedMeal]="selectedMeal"
+        (doneClickedSender)="finishedEditing()"
+      ></edit-meal>
+    </div>
   </div>
   `
 })
@@ -25,7 +27,10 @@ export class AppComponent {
   public masterMealList: Meal[] = [
     new Meal("Breakfast Sandwich", "bacon, egg, cheese", 300),
     new Meal("16oz coffee", "starbucks pike roast w cream", 5),
-    new Meal("Oatmeal Raisin Cookie", "warm cookie from subway", 125)
+    new Meal("Burger and Fries", "bacon cheesburger w fries", 950),
+    new Meal("Oatmeal Raisin Cookie", "warm cookie from subway", 125),
+    new Meal("Pasta", "pasta with ground beef and red sauce", 700),
+    new Meal("Ice Cream", "rum raisin ice cream", 600)
   ];
   selectedMeal: Meal = null;
   showMeal(clickedMeal: Meal) {

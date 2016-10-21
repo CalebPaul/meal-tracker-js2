@@ -1,6 +1,26 @@
 h1 {
-  color: red;
   font-family: monospace;
+}
+
+body {
+  color: white;
+  font-family: monospace;
+  background: url(/../resources/img/bg4.jpeg);
+  background-size:cover;
+  background-attachment: fixed;
+}
+
+button {
+  color: black;
+  margin-top: 3px;
+}
+
+input {
+  color: black;
+}
+
+.well {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .container {
@@ -14,13 +34,26 @@ h1 {
 }
 
 .meal-in-list {
-  padding: 6px;
+  padding: 5px;
 }
 
-.edit-box{
-  padding: 10px;
+.list-box:hover {
+  overflow-y: scroll;
 }
 
-.new-box{
+.list-box {
+
+}
+
+.edit-box {
+
+}
+
+.new-box {
+
+}
+
+.col-sm-4 {
+  font-family: monospace;
   padding: 10px;
 }

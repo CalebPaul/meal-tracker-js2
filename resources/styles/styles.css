@@ -37,23 +37,28 @@ input {
   padding: 5px;
 }
 
-.list-box:hover {
+.scroll-bar:hover {
   overflow-y: scroll;
 }
 
 .list-box {
-
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .edit-box {
-
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .new-box {
-
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .col-sm-4 {
+  font-family: monospace;
+  padding: 10px;
+}
+
+.col-sm-3 {
   font-family: monospace;
   padding: 10px;
 }

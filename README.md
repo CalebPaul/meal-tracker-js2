@@ -46,7 +46,6 @@ _Caleb Paul: @calebpaulmusic_
 ## Technologies Used
 
 _Bootstrap_
-_HTML5 Canvas_
 _Javascript_
 _jQuery_
 _Node_

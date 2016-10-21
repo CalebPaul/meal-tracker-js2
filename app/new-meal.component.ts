@@ -30,9 +30,24 @@ import { Meal } from './meal.model';
 
 export class NewMealComponent {
   @Output() newMealSender = new EventEmitter();
-  addClicked(name: string, details:string, calories: number) {
+  addClicked(name: string, details: string, calories: number) {
+
     var newMealToAdd: Meal = new Meal (name, details, calories);
+    if (newMealToAdd.name === "") {
+      alert("Please complete 'Meal Name' field.");
+      return false;
+    } else if (newMealToAdd.details === "") {
+      alert("Please complete 'Ingredients' field.");
+      return false;
+    } else if (isNaN(calories)) {
+      alert("Please enter a numeric value in 'Calories' field.");
+      return false;
+    } else if (!calories) {
+      alert("Please complete 'Calories' field.");
+      return false;
+    }
+    // ^ logic/branching to catch empty field entries.
     this.newMealSender.emit(newMealToAdd);
-    console.log(newMealToAdd); //to test new object instantiation
+    console.log(newMealToAdd); //to test new object instantiation.
   }
 }

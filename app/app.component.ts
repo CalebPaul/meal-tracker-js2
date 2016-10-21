@@ -30,7 +30,8 @@ export class AppComponent {
     new Meal("Burger and Fries", "bacon cheesburger w fries", 950),
     new Meal("Oatmeal Raisin Cookie", "warm cookie from subway", 125),
     new Meal("Pasta", "pasta with ground beef and red sauce", 700),
-    new Meal("Ice Cream", "rum raisin ice cream", 600)
+    new Meal("Ice Cream", "rum raisin ice cream", 600),
+    new Meal("Triple Ginger Snaps", "so much ginger, bro", 400)
   ];
   selectedMeal: Meal = null;
   showMeal(clickedMeal: Meal) {

@@ -1,5 +1,6 @@
 h1 {
   font-family: monospace;
+  color: red;
 }
 
 body {
@@ -17,6 +18,7 @@ button {
 
 input {
   color: black;
+  font-size: 11px;
 }
 
 .well {
@@ -31,10 +33,20 @@ input {
 .page-header {
   text-align: center;
   font-family: monospace;
+  color: red;
 }
 
 .meal-in-list {
   padding: 5px;
+}
+
+.spacer {
+  color: red;
+}
+
+.scroll-bar {
+  height: 750px;
+  overflow: hidden;
 }
 
 .scroll-bar:hover {

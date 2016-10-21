@@ -18,5 +18,9 @@ h1 {
 }
 
 .edit-box{
-  padding: 6px;
+  padding: 10px;
+}
+
+.new-box{
+  padding: 10px;
 }

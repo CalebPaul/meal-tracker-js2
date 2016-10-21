@@ -1,7 +1,7 @@
 # _Meal Tracker_
 
 #### _10-21-2016_
-
+![project screenshot](/resources/img/screenshot.png)
 #### By _**Caleb Paul**_
 
 ## Description
@@ -44,7 +44,7 @@ _None known_
     - site collects information from fields.
     - site displays new entry entries list.
     - site handles errors for incomplete, or incorrect submissions.
-    
+
 * When user interacts with caloric filter:
     - site displays info for selected caloric values.
 

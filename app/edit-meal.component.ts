@@ -11,11 +11,11 @@ import { Meal } from './meal.model'
         <input [(ngModel)]="childSelectedMeal.name">
       </div>
       <div>
-        <label>Edit Meal Description:</label>
+        <label>Edit Ingredients:</label>
         <input [(ngModel)]="childSelectedMeal.details">
       </div>
       <div>
-        <label>Edit Meal Calories:</label>
+        <label>Edit Calories:</label>
         <input [(ngModel)]="childSelectedMeal.calories">
         <button (click)="doneClicked()">Done</button>
       </div>

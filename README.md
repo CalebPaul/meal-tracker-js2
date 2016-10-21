@@ -31,12 +31,22 @@ _Entries are editable, and lists are sortable by caloric content._
 _None known_
 
 ## Specifications
-* On page load:
-    - Page displays info.
-* When user interacts with site:
-    - site retrieves and displays info.
-    - site displays info.
-    - site handles error.
+* On site load:
+    - Site displays meal info (meal, ingredients, calories) in scrollable 'entries' list.
+    - Site displays 'New Entry' inputs.
+
+* When user selects 'edit':
+    - Edit form is made visible in right div.
+    - site allows fields to be edited with two-way binding.
+    - When user selects 'done', edit form will no longer be visible.
+
+* When user adds an entry:
+    - site collects information from fields.
+    - site displays new entry entries list.
+    - site handles errors for incomplete, or incorrect submissions.
+    
+* When user interacts with caloric filter:
+    - site displays info for selected caloric values.
 
 ## Support and contact details
 

@@ -7,7 +7,7 @@ import { Meal } from './meal.model'
     <div class="edit-box col-sm-3 col-sm-offset-1 " *ngIf="childSelectedMeal">
     <h3 class="page-header">Edit Entry</h3>
       <div>
-        <label>Edit Meal Name</label>
+        <label>Edit Meal:</label>
         <input [(ngModel)]="childSelectedMeal.name">
       </div>
       <div>
@@ -17,8 +17,8 @@ import { Meal } from './meal.model'
       <div>
         <label>Edit Calories:</label>
         <input [(ngModel)]="childSelectedMeal.calories">
-        <button (click)="doneClicked()">Done</button>
       </div>
+      <button (click)="doneClicked()">Done</button>
     </div>
   `
 })

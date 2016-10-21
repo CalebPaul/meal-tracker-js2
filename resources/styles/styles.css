@@ -16,9 +16,14 @@ button {
   margin-top: 3px;
 }
 
+label {
+  font-size: 13px;
+}
+
 input {
   color: black;
   font-size: 11px;
+  float: center;
 }
 
 .well {

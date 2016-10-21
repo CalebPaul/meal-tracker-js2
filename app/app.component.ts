@@ -5,10 +5,15 @@ import { Meal } from './meal.model';
   selector: 'my-app',
   template: `
   <div class="container">
-    <h1>Meal Tracker</h1>
+    <h1 class="well">Meal Tracker</h1>
     <meal-list
       [childMealList]="masterMealList"
+      (clickSender)="showMeal($event)"
     ></meal-list>
+    <edit-meal
+      [childSelectedMeal]="selectedMeal"
+      (doneClickedSender)="finishedEditing()"
+    ></edit-meal>
   </div>
   `
 })
@@ -19,5 +24,11 @@ export class AppComponent {
     new Meal("16oz coffee", "starbucks pike roast w cream", 5),
     new Meal("Oatmeal Raisin Cookie", "warm cookie from subway", 125)
   ];
-
+  selectedMeal: Meal = null;
+  showMeal(clickedMeal: Meal) {
+    this.selectedMeal = clickedMeal;
+  }
+  finishedEditing() {
+    this.selectedMeal = null;
+  }
 }

@@ -1,7 +1,18 @@
 h1 {
   color: red;
+  font-family: monospace;
 }
 
 .container {
   width: 85%;
+  text-align: center;
+}
+
+.page-header {
+  text-align: center;
+  font-family: monospace;
+}
+
+.meal-in-list {
+  padding: 6px;
 }

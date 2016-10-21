@@ -1,7 +1,10 @@
 {
-  "name": "angular2-skeleton",
+  "name": "Meal Tracker",
   "description": "",
   "main": "",
+  "authors": [
+  "Caleb Paul <calebpaul21@gmail.com>"
+],
   "license": "ISC",
   "homepage": "",
   "ignore": [
@@ -10,5 +13,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
 }

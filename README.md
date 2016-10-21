@@ -18,13 +18,12 @@ _Entries are editable, and lists are sortable by caloric content._
 ## Setup/Installation Requirements
 
 * _Clone this repository (https://github.com/CalebPaul/record-store.git) to your desktop._
-* _Install Node Package Manager(npm)._
-* _Instal Gulp and Bower._
-* _Instal Typescript._
+* _Navigate to project folder using terminal._
+* _Install Node Package Manager(npm) by typing `npm install` in terminal._
+* _Install Bower by typing `bower install`._
+* _Install Typescript by typing `apm install typescript` in terminal._
 * _Install all dependencies listed in the package.json, and bower.json files._
-* _Navigate to project folder in terminal._
-* _Type `bower install` in terminal._
-* _Type `gulp serve` in terminal._
+* _Type `gulp serve` in terminal, this will open the web app in your browser._
 
 
 ## Known Bugs

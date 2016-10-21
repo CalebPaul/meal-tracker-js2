@@ -2,11 +2,11 @@ import {Pipe, PipeTransform} from '@angular/core';
 import {Meal} from './meal.model';
 
 @Pipe({
-  name: "highcal",
+  name: "calorie",
   pure: false
 })
 
-export class HighCalPipe implements PipeTransform {
+export class CaloriePipe implements PipeTransform {
   transform(input: Meal[]) {
     var output: Meal[] = [];
     for (var i = 0; i < input.length; i++) {
